@@ -1,0 +1,12 @@
+apiVersion: yevhen-test-group.yevhenzavhorodniipersonal/v1alpha1
+kind: CustomKind
+metadata:
+  labels:
+    app.kubernetes.io/name: customkind
+    app.kubernetes.io/instance: customkind-sample
+    app.kubernetes.io/part-of: k8soperator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8soperator
+  name: customkind-sample
+spec:
+  # TODO(user): Add fields here

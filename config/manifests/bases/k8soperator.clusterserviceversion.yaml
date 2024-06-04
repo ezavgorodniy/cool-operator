@@ -1,0 +1,49 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: k8soperator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: CustomKind is the Schema for the customkinds API
+      displayName: Custom Kind
+      kind: CustomKind
+      name: customkinds.yevhen-test-group.yevhenzavhorodniipersonal
+      version: v1alpha1
+  description: Yevhen is testing the operator sdk
+  displayName: yevhenzavhorodniipersonal
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - test
+  - k8s
+  - operator
+  links:
+  - name: K8soperator
+    url: https://k8soperator.domain
+  maintainers:
+  - email: yevhen.zavhorodnii@gmail.com
+    name: yevhen
+  maturity: alpha
+  provider:
+    name: yevhenzavhorodnii
+  version: 0.0.0
